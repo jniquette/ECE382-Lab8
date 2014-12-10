@@ -24,7 +24,8 @@ The major task of Lab 8 is to implement the functionality of Lab 7 to actually n
 ###Plan of Attack
 During Lab 7 I noticed that the IR sensors are not very useful at detecting walls at a distance of more than ~8 inches. Therefore, my plan of attack is to use the starboard and port sensors to detect when the robot moves around a corner as opposed to when it approaches a wall. I should be able to achieve this for the first two turns, but then I will have to use the front sensor for the third and fourth turns. I hope that by doing this I can safely utilize a higher average PWM signal and move the robot through the maze faster. 
 
-
+###Maze Diagram
+![alt text](https://github.com/jniquette/ECE382-Lab8/blob/master/images/map.png "Maze Diagram")
 	
 ###PseudoCode
 	//////////////////////////////////
