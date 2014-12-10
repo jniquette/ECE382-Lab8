@@ -33,7 +33,7 @@ During Lab 7 I noticed that the IR sensors are not very useful at detecting wall
 		Move Forward Continuous
 		
 		lookForLeftCorner()
-		turn left 90 degrees
+		pivot left 90 degrees
 		Move Forward Continuous
 	}
 	
@@ -42,7 +42,7 @@ During Lab 7 I noticed that the IR sensors are not very useful at detecting wall
 	bFunctionality(){
 		reqFunctionality()
 		lookForRightCorner()
-		turn right 90 degrees
+		pivot right 90 degrees
 		Move Forward Continuously
 	}
 	
@@ -60,6 +60,11 @@ During Lab 7 I noticed that the IR sensors are not very useful at detecting wall
 		turn left 90 degrees
 		Move Forward Continuously
 	}
+	
+	//////////////////////////////////
+	//Bonus Functionality
+	Waiting on rule clarification as to how the robot will be placed back into the maze after it exits door 3.
+
 	
 	//Use this method to stay on a "straight" path
 	checkSideSensors(){
@@ -85,6 +90,14 @@ During Lab 7 I noticed that the IR sensors are not very useful at detecting wall
 		while(true){
 			checkSideSensors()
 			if right sensor is at the ambient IR level{
+				break()
+			}
+	}	
+	
+	lookForForwardWall(){
+		while(true){
+			checkSideSensors()
+			if forward wall is within 6 inches{
 				break()
 			}
 	}
