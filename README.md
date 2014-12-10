@@ -104,7 +104,7 @@ During Lab 7 I noticed that the IR sensors are not very useful at detecting wall
 	}
 	
 ##Troubleshooting
-I didn't have any issues getting my right sensor to work, but I did encounter some problems getting the front and left sensors to work. With no connection to the MSP430, both sensors operated correctly giving valid analog values between 0 and 3.3 volts. However, when I connected the sensors to the MSP430 on ports 1.1 and 1.0, the voltage between the sensors and the MSP430 was +3.55 volts. Even with no connection to the IR sensor, pin 1.1 was high, so I hypothesized that the issue was with configuring the MSP430.
+Nothing yet...
 	
 	
 ##Documentation Statement
