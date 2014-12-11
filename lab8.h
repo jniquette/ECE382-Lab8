@@ -12,6 +12,15 @@ void doMazeMovements();
 void calibrateSensors();
 void lightSequence(unsigned char counts);
 
+//Functionality stubs
+void checkSideSensors();
+void lookForLeftCorner();
+void lookForRightCorner();
+void lookForFrontWall();
+void reqFunctionality();
+void bFunctionality();
+void aFunctionality();
+void bonusFunctionality();
 
 
 #endif /* LAB6_H_ */

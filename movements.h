@@ -23,7 +23,6 @@ void rightForward();
 void rightBackward();
 void leftForward();
 void leftBackward();
-void reqFunctionality();
 void pivotForwardLeft();
 void pivotForwardRight();
 void pivotBackwardLeft();

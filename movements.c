@@ -8,7 +8,7 @@
 
 
 #include <msp430g2553.h>
-#include "lab7.h"
+#include "lab8.h"
 #include "movements.h"
 
 void initMotors(){
@@ -25,10 +25,10 @@ void initMotors(){
 
 	TA1CTL = ID_3 | TASSEL_2 | MC_1;		// Use 1:8 presclar off MCLK
     TA1CCR0 = 1000;						// set signal period
-    TA1CCR1 = 500;						// Set an appropriate duty cycle
-    TA1CCTL1 = OUTMOD_7;					// set TACCTL1 to Reset / Set mode
-    TA1CCR2 = 500;						// set an appropriate duty cycle
-    TA1CCTL2 = OUTMOD_7;					// set TACCTL1 to Reset / Set mode
+    TA1CCR1 = 400;						// Set an appropriate duty cycle
+    TA1CCTL1 = OUTMOD_3;					// set TACCTL1 to Reset / Set mode
+    TA1CCR2 = 400;						// set an appropriate duty cycle
+    TA1CCTL2 = OUTMOD_3;					// set TACCTL1 to Reset / Set mode
 
 	_enable_interrupt();
 }
@@ -108,38 +108,25 @@ void leftBackward(){
 
 void pivotForwardLeft(){
 	rightForward();
-	__delay_cycles(2600000);
+	__delay_cycles(6000000);
 	stop();
 }
 
 void pivotForwardRight(){
 	leftForward();
-	__delay_cycles(2600000);
+	__delay_cycles(6000000);
 	stop();
 }
 
 void pivotBackwardLeft(){
 	rightBackward();
-	__delay_cycles(3800000);
+	__delay_cycles(6000000);
 	stop();
 }
 
 void pivotBackwardRight(){
 	leftBackward();
-	__delay_cycles(3800000);
+	__delay_cycles(6000000);
 	stop();
 }
 
-void reqFunctionality(){
-	stepForward();
-	__delay_cycles(16000000);
-	stepBackward();
-	__delay_cycles(16000000);
-	stepRight();
-	__delay_cycles(16000000);
-	stepLeft();
-	__delay_cycles(16000000);
-	stepForward();
-	__delay_cycles(16000000);
-	stepBackward();
-}
