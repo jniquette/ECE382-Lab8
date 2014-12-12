@@ -104,7 +104,11 @@ During Lab 7 I noticed that the IR sensors are not very useful at detecting wall
 	}
 	
 ##Troubleshooting
-Nothing yet...
+The biggest issue I had is that the IR sensor readings were incredibly inconsistent. While debugging the robot while attached to the computer the sensors read values up to .65 volts (out of 3.3 volts) different from when the robot was not connected to the computer. After long hours of debugging, I achieved required functionality. 
+
+##Video
+[A Functionality Using Sensors](https://www.youtube.com/watch?v=WgxF5JTip8I&list=UUAXhf3d2OrbDpP-IZgnnAvQ)
+[B Functionality Using Dead Reckoning](https://www.youtube.com/watch?v=TC9hxc7y6YM&list=UUAXhf3d2OrbDpP-IZgnnAvQ)
 	
 	
 ##Documentation Statement
