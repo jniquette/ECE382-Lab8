@@ -108,6 +108,7 @@ The biggest issue I had is that the IR sensor readings were incredibly inconsist
 
 ##Video
 [A Functionality Using Sensors](https://www.youtube.com/watch?v=WgxF5JTip8I&list=UUAXhf3d2OrbDpP-IZgnnAvQ)
+
 [B Functionality Using Dead Reckoning](https://www.youtube.com/watch?v=TC9hxc7y6YM&list=UUAXhf3d2OrbDpP-IZgnnAvQ)
 	
 	
